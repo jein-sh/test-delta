@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Rubik", 'Arial', sans-serif;
+  color: #000000;
+      
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff;
+}
+
+th {
+  background-color: rgba(211, 211, 211, 0.2);
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+td {
+  background-color: rgba(211, 211, 211, 0.2);
+  padding: 10px 20px;
+  min-width: 160px;
+  text-align: end;
+}
+
+td:first-child {
+  min-width: 250px;
+  text-align: start;
+}
+
+td:nth-child(4) {
+  min-width: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  overflow-x: auto;
+}
+
+tr[data-value] {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+tr[data-value]:hover {
+  opacity: 0.7;
+}
+
+.blue-bg {
+    background-color: rgba(135, 206, 250, 0.2);
+}
+
+.green-bg {
+    background-color: rgba(50, 205, 50, 0.2);
+}
+
+.green-text {
+    color: rgb(50, 205, 50);
+}
+
+.red-bg {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.red-text {
+    color: rgb(255, 0, 0);
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+  
+    white-space: nowrap;
+  
+    border: 0;
+  
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
